@@ -80,3 +80,9 @@
         opacity:1;
     }
 }
+
+.services-list{
+  margin: 0 auto; 
+  font-size: 26px;
+  font-style: italic;
+}
