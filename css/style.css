@@ -83,6 +83,6 @@
 
 .services-list{
   margin: 0 auto; 
-  font-size: 26px;
-  font-style: italic;
+  font-size: 26px !important;
+  font-style: italic !important;
 }
