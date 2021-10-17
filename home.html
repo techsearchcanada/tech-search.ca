@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/style.css">
   <style>
   body,h1 {font-family: "Raleway", sans-serif}
   body, html {height: 100%}
@@ -19,41 +20,12 @@
   }
 
 
-  @media (min-width: 167px) and (max-width: 1024px) {
-      h1 { 
-        font-size: 36px !important; 
-        text-align: center;
-
-      }
-      .mobile-menu{
-        display: inline !important;
-      }
-      .bgimg {
-
-      background-position: -10vw 0px;
-
-    }
-    @media (min-width: 360px) and (max-width: 400px) and (min-height: 800px) and (max-height: 850px) {
-      .bgimg {
-
-      background-position: -30vw 0px;
-
-      }
-    }
-    @media (min-width: 280px) and (max-width: 280px) and (min-height: 653px) and (max-height: 653px) {
-      .bgimg {
-
-      background-position: -30vw 0px;
-
-      }
-    }
-  }
   </style>
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-      <!--<a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>-->
+      <a href="home.html" class="w3-bar-item w3-button"><img id="top-image" src="imgs/mini-logo.png" style="width: 50px;"></a>
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="services.html" class="w3-bar-item w3-button">Services</a>
@@ -68,16 +40,16 @@
     <div class="mobile-menu" style="display: none;">
       <!-- Sidebar (hidden by default) -->
       <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-        <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
-        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+        <a href="javascript:void(0)" onclick="close_menu()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="services.html" onclick="close_menu()" class="w3-bar-item w3-button">Services</a>
+        <a href="contact.html" onclick="close_menu()" class="w3-bar-item w3-button">Contact</a>
       </nav>
 
       <!-- Top menu -->
       <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-          <div class="w3-button" onclick="w3_open()">☰</div>
-          <a href="home.html" class="w3-bar-item w3-button w3-right"><img src="imgs/binoculars.png" style="width: 50px;"></a>
+          <div class="w3-button" onclick="open_menu()">☰</div>
+          <a href="home.html" class="w3-bar-item w3-button w3-right"><img src="imgs/mini-logo.png" style="width: 50px;"></a>
         </div>
       </div>
 
@@ -100,11 +72,11 @@
 </html>
 <script>
   // Script to open and close sidebar
-  function w3_open() {
+  function open_menu() {
     document.getElementById("mySidebar").style.display = "block";
   }
    
-  function w3_close() {
+  function close_menu() {
     document.getElementById("mySidebar").style.display = "none";
   }
   </script>
