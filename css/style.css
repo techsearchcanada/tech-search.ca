@@ -1,3 +1,18 @@
+
+.contact-list{
+  margin: 0 auto; 
+  font-size: 26px !important;
+
+}
+
+.services-list{
+  margin: 0 auto; 
+  font-size: 26px !important;
+  font-style: italic !important;
+}
+
+
+
 @media (min-width: 167px) and (max-width: 1024px) {
     h1 { 
       font-size: 36px !important; 
@@ -41,6 +56,13 @@
       }
 
 
+    .contact-list{
+      margin: 0 auto; 
+      font-size: 18px !important;
+    
+    }
+      
+
   }
 
 
@@ -81,15 +103,6 @@
     }
 }
 
-.services-list{
-  margin: 0 auto; 
-  font-size: 26px !important;
-  font-style: italic !important;
-}
 
 
-.contact-list{
-  margin: 0 auto; 
-  font-size: 26px !important;
 
-}
