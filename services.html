@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 <title>TechSearch & Associates</title>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,6 +12,19 @@
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
+
+.services-list{
+  margin: 0 auto; 
+  font-size: 26px;
+  font-style: italic;
+}
+
+
+@media (min-width: 167px) and (max-width: 1024px) {
+    #recruitment_image{
+      width: 60vw !important;
+    }
+}
 
 </style>
 
@@ -32,37 +48,34 @@ body, html {height: 100%}
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
     
-    <div style="clear: both; width: 100%; height: 20px;"></div>
-
-    <img src="imgs/recruitment.jpg" alt="Me" class="w3-image" style="display:block;margin:auto; margin-top: 100px; width: 40vw;">
+    <img id="recruitment_image" src="imgs/recruitment.jpg" alt="recruitment" style="display:block; margin:auto; margin-top: 6vh; width: 40vw;">
 
     
 
-    <div style="text-align: center;  margin: 0 auto;">
+    <div style="text-align: center; margin: 0 auto;">
 
+      <br><br>
 
-        
-
-        <br><br>
       <div style="font-size: 24pt;">Providing Recruitment Services For Engineering And Technical Professionals To:</div>
-        <br><br>
 
-        <div style="width: 400px; margin: 0 auto; font-size: 26px;">
-            Manufacturing
-        </div>
-        <div style="width: 400px; margin: 0 auto; font-size: 26px;">
-            Consulting Engineering
-        </div>
-        <div style="width: 400px; margin: 0 auto; font-size: 26px;">
-            Government
-        </div>
-        <div style="width: 400px; margin: 0 auto; font-size: 26px;">
-            Private Sector
-        </div>
-  
+      <br><br>
 
+      <div class="services-list">
+          Manufacturing
+      </div>
+      <div class="services-list">
+          Consulting Engineering
+      </div>
+      <div class="services-list">
+          Government
+      </div>
+      <div class="services-list">
+          Private Sector
+      </div>
 
     </div>
+
+
   </div>
 
   
