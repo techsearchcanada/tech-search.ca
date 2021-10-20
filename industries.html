@@ -38,6 +38,7 @@ body, html {height: 100%}
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
       <a href="javascript:void(0)" onclick="close_menu()" class="w3-bar-item w3-button">Close Menu</a>
       <a href="services.html" onclick="close_menu()" class="w3-bar-item w3-button">Services</a>
+      <a href="industries.html" onclick="close_menu()" class="w3-bar-item w3-button">Industries</a>
       <a href="contact.html" onclick="close_menu()" class="w3-bar-item w3-button">Contact</a>
     </nav>
 
@@ -61,14 +62,14 @@ body, html {height: 100%}
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
     
-    <div style="display:block; margin:auto; margin-top: 12vh; width: 40vw;">
+    <div id="industries_page" style="display:block; margin:auto; margin-top: 12vh; width: 40vw;">
 
         <table style="width: 100%;">
 
       
             <tr style="text-align: center;">
                 <th id="box_1" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_1_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Aerospace</div>
                         </div>
@@ -78,7 +79,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_2" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_2_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Architectural</div>
                         </div>
@@ -88,7 +89,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_3" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_3_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Automation</div>
                         </div>
@@ -100,7 +101,7 @@ body, html {height: 100%}
             </tr>
             <tr style="text-align: center;">
                 <th id="box_4" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_4_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Automotive</div>
                         </div>
@@ -110,7 +111,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_5" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_5_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Building Services</div>
                         </div>
@@ -120,7 +121,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_6" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_6_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Construction</div>
                         </div>
@@ -132,7 +133,7 @@ body, html {height: 100%}
             </tr>
             <tr style="text-align: center;">
                 <th id="box_7" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_7_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Environmental</div>
                         </div>
@@ -146,7 +147,7 @@ body, html {height: 100%}
                     <img src="imgs/mini-logo.png" alt="logo" class="grid_image">
                 </th>
                 <th id="box_8" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_8_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Information Technology</div>
                         </div>
@@ -158,7 +159,7 @@ body, html {height: 100%}
             </tr>
             <tr style="text-align: center;">
                 <th id="box_9" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_9_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Infrastructure</div>
                         </div>
@@ -168,7 +169,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_10" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_10_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Mining</div>
                         </div>
@@ -178,7 +179,7 @@ body, html {height: 100%}
                     </div>
                 </th>
                 <th id="box_11" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_11_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Nuclear</div>
                         </div>
@@ -190,7 +191,7 @@ body, html {height: 100%}
             </tr>
             <tr style="text-align: center;">
                 <th id="box_12" class="container flip-box">
-                    <div class="flip-box-inner">
+                    <div id="box_12_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Oil & Gas</div>
                         </div>
@@ -199,8 +200,8 @@ body, html {height: 100%}
                         </div>
                     </div>
                 </th>
-                <th class="container flip-box">
-                    <div id="box_13" class="flip-box-inner">
+                <th id="box_13" class="container flip-box">
+                    <div id="box_13_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Pharmaceutical</div>
                         </div>
@@ -209,8 +210,8 @@ body, html {height: 100%}
                         </div>
                     </div>
                 </th>
-                <th class="container flip-box">
-                    <div id="box_14" class="flip-box-inner">
+                <th id="box_14" class="container flip-box">
+                    <div id="box_14_inner" class="flip-box-inner">
                         <div class="flip-box-front">
                             <div class="centered">Special Purpose Machinery</div>
                         </div>
@@ -257,68 +258,28 @@ body, html {height: 100%}
 <script>
 
 
-    const arr_of_boxes = [
-
-        'box_1',
-        'box_2',
-        'box_3',
-        'box_4',
-        'box_5',
-        'box_6',
-        'box_7',
-        'box_8',
-        'box_9',
-        'box_10',
-        'box_11',
-        'box_12',
-        'box_13',
-        'box_14',
-
-    ]
 
 
-    arr_of_boxes.forEach(function(value, index){
+    setTimeout(function(){
+        flipIndustries(1)
+    }, 1000)
 
-        //console.log(value)
+    function flipIndustries(num){
+        $('#box_' + num + '_inner').css('transform', 'rotateY(180deg)');
 
-
-       
-
-        
-
-    })
-
-
-
-    var element = document.getElementById('box_1')
-    element.addEventListener('mouseover', function() {
-            console.log('Event triggered');
-    });
-
-    setInterval(function(){
+        setTimeout(function(){
+            $('#box_' + num + '_inner').css('transform', 'rotateY(0deg)');
+           
+            if(num < 14){
+                flipIndustries(num + 1)
+            }
+            else{
+                flipIndustries(1)
+            }
             
-       
+        }, 3000)
 
-    }, 3000)
-
-
-    function test(){
-        var event = new MouseEvent('mouseover', {
-            'view': window,
-            'bubbles': true,
-            'cancelable': true
-        });
-
-        element.dispatchEvent(event);
     }
-
-
-
-    $("#box_1").mouseover(function() { 
-        var t = setTimeout("test()",1500);
-    });
-
-
 
 
 
