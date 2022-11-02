@@ -137,17 +137,24 @@
 
       }
     }
-    @media (min-width: 375px) and (max-width: 390px) and (min-height: 670px) and (max-height: 720px) {
+    @media (min-width: 375px) and (max-width: 390px) and (min-height: 660px) and (max-height: 720px) {
       .bgimg {
 
       background-position: -95vw 0px;
 
       }
     }
-    @media (min-width: 390px) and (max-width: 425px) and (min-height: 670px) and (max-height: 720px) {
+    @media (min-width: 390px) and (max-width: 405px) and (min-height: 660px) and (max-height: 720px) {
       .bgimg {
 
       background-position: -105% 0px;
+
+      }
+    }
+    @media (min-width: 405px) and (max-width: 420px) and (min-height: 660px) and (max-height: 720px) {
+      .bgimg {
+
+      background-position: -77vw 0px;
 
       }
     }
