@@ -1,311 +1,187 @@
-
 <!DOCTYPE html>
-<html>
-<title>TechSearch & Associates</title>
+<html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industries — TechSearch &amp; Associates</title>
+  <meta name="description" content="TechSearch & Associates places technical talent across aerospace, automotive, nuclear, oil & gas, mining, construction, IT, and more.">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-</style>
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="home.html" class="w3-bar-item w3-button"><img id="top-image" src="imgs/mini-logo.png" style="width: 50px;"></a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="services.html" class="w3-bar-item w3-button">Services</a>
-      <a href="industries.html" class="w3-bar-item w3-button">Industries</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-
 <body>
 
-
-  <div class="mobile-menu" style="display: none;">
-    <!-- Sidebar (hidden by default) -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-      <a href="javascript:void(0)" onclick="close_menu()" class="w3-bar-item w3-button" style="background: #ccc !important;">Close Menu</a>
-      <a href="services.html" onclick="close_menu()" class="w3-bar-item w3-button">Services</a>
-      <a href="industries.html" onclick="close_menu()" class="w3-bar-item w3-button">Industries</a>
-      <a href="contact.html" onclick="close_menu()" class="w3-bar-item w3-button">Contact</a>
-    </nav>
-
-    <!-- Top menu -->
-    <div class="w3-top">
-      <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-        <div class="w3-button" onclick="open_menu()">☰</div>
-        <a href="home.html" class="w3-bar-item w3-button w3-right"><img src="imgs/mini-logo.png" style="width: 50px;"></a>
-      </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="home.html" class="brand">
+        <img class="brand-mark" src="imgs/mini-logo.png" alt="" onerror="this.style.display='none'">
+        <span class="brand-word">TechSearch <em>&amp;</em> Associates</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html"><span class="idx">01</span>Services</a>
+        <a href="industries.html" aria-current="page"><span class="idx">02</span>Industries</a>
+        <a href="contact.html"><span class="idx">03</span>Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  </div>
+  <main>
+    <section class="page-hero industries">
+      <div class="wrap">
+        <p class="eyebrow">Industries</p>
+        <h1>Specialized by sector. Unified in approach.</h1>
+      </div>
+    </section>
 
+    <section class="industries-section">
+      <div class="wrap">
+        <div class="industry-grid">
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/aerospace.jpg')"></div>
+            <span class="tile-index">01 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Aerospace</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/architectural.jpg')"></div>
+            <span class="tile-index">02 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Architectural</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/automation.jpg')"></div>
+            <span class="tile-index">03 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Automation</span>
+          </div>
 
-<div>
- 
-    
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    
-    <div id="industries_page" style="display:block; margin:auto; margin-top: 12vh; width: 40vw;">
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/automotive.jpg')"></div>
+            <span class="tile-index">04 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Automotive</span>
+          </div>
 
-        <table style="width: 100%;">
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/building_services.png')"></div>
+            <span class="tile-index">05 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Building Services</span>
+          </div>
 
-      
-            <tr style="text-align: center;">
-                <th id="box_1" class="container flip-box">
-                    <div id="box_1_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Aerospace</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/aerospace.jpg" alt="aerospace" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_2" class="container flip-box">
-                    <div id="box_2_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Architectural</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/architectural.jpg" alt="architectural" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_3" class="container flip-box">
-                    <div id="box_3_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Automation</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/automation.jpg" alt="automation" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-            </tr>
-            <tr style="text-align: center;">
-                <th id="box_4" class="container flip-box">
-                    <div id="box_4_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Automotive</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/automotive.jpg" alt="automotive" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_5" class="container flip-box">
-                    <div id="box_5_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Building Services</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/building_services.png" alt="building_services" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_6" class="container flip-box">
-                    <div id="box_6_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Construction</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/construction.jpg" alt="construction" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-            </tr>
-            <tr style="text-align: center;">
-                <th id="box_7" class="container flip-box">
-                    <div id="box_7_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Environmental</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/environmental.jpg" alt="environmental" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th class="container flip-box">
-                    <!--<img src="imgs/industries/food.jpg" alt="food" class="grid_image">-->
-                    <img src="imgs/logo.png" alt="logo" class="grid_image">
-                </th>
-                <th id="box_8" class="container flip-box">
-                    <div id="box_8_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Information Technology</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/information_technology.jpg" alt="information_technology" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-            </tr>
-            <tr style="text-align: center;">
-                <th id="box_9" class="container flip-box">
-                    <div id="box_9_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Infrastructure</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/infrastructure.jpg" alt="infrastructure" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_10" class="container flip-box">
-                    <div id="box_10_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Mining</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/mining.jpg" alt="mining" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_11" class="container flip-box">
-                    <div id="box_11_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Nuclear</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/nuclear.jpg" alt="nuclear" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-            </tr>
-            <tr style="text-align: center;">
-                <th id="box_12" class="container flip-box">
-                    <div id="box_12_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Oil & Gas</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/oil_gas.jpg" alt="oil_gas" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_13" class="container flip-box">
-                    <div id="box_13_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Pharmaceutical</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/pharmaceutical.jpg" alt="pharmaceutical" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-                <th id="box_14" class="container flip-box">
-                    <div id="box_14_inner" class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="centered">Special Purpose Machinery</div>
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="imgs/industries/special_purpose_machinery.jpg" alt="special_purpose_machinery" class="grid_image">
-                        </div>
-                    </div>
-                </th>
-            </tr>
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/construction.jpg')"></div>
+            <span class="tile-index">06 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Construction</span>
+          </div>
 
-        
-    
-        </table>
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/environmental.jpg')"></div>
+            <span class="tile-index">07 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Environmental</span>
+          </div>
 
-        
-    </div> 
-    
+          <div class="industry-tile industry-tile--brand">
+            <img src="imgs/logo.png" alt="TechSearch & Associates">
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/information_technology.jpg')"></div>
+            <span class="tile-index">08 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Information Technology</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/infrastructure.jpg')"></div>
+            <span class="tile-index">09 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Infrastructure</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/mining.jpg')"></div>
+            <span class="tile-index">10 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Mining</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/nuclear.jpg')"></div>
+            <span class="tile-index">11 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Nuclear</span>
+          </div>
 
-    
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/oil_gas.jpg')"></div>
+            <span class="tile-index">12 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Oil &amp; Gas</span>
+          </div>
 
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/pharmaceutical.jpg')"></div>
+            <span class="tile-index">13 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Pharmaceutical</span>
+          </div>
 
-  </div>
+          <div class="industry-tile">
+            <div class="tile-img" style="background-image:url('imgs/industries/special_purpose_machinery.jpg')"></div>
+            <span class="tile-index">14 / 14</span>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+            <span class="tile-name">Special Purpose Machinery</span>
+          </div>
 
-  
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> TechSearch &amp; Associates</span>
+      <span>Toronto, Canada</span>
+    </div>
+  </footer>
 
-
-  <div class="w3-padding-large">
-    &copy; TechSearch & Associates
-  </div>
-</div>
-
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('mobileNav');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!open));
+          menu.classList.toggle('is-open', !open);
+        });
+        menu.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-open');
+          });
+        });
+      }
+      var yearEl = document.getElementById('year');
+      if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+    })();
+  </script>
 </body>
 </html>
-
-
-
-
-
-<script>
-
-
-
-
-    setTimeout(function(){
-        flipIndustries(1)
-    }, 1000)
-
-    function flipIndustries(num){
-        $('#box_' + num + '_inner').css('transform', 'rotateY(180deg)');
-
-        setTimeout(function(){
-            $('#box_' + num + '_inner').css('transform', 'rotateY(0deg)');
-           
-            if(num < 14){
-                flipIndustries(num + 1)
-            }
-            else{
-                flipIndustries(1)
-            }
-            
-        }, 3000)
-
-    }
-
-
-
-  // Script to open and close sidebar
-  function open_menu() {
-    document.getElementById("mySidebar").style.animation = "animateleft 0.4s";
-    document.getElementById("mySidebar").style.display = "block";
-  }
-   
-  function close_menu() {
-    document.getElementById("mySidebar").style.animation = "animateright 0.4s";
-    setTimeout(function(){
-      document.getElementById("mySidebar").style.display = "none";
-    }, 380)
-  }
-
-
-
-
-
-
-
-  </script>
-
-
-
-
-
-

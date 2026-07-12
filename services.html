@@ -1,129 +1,101 @@
-
 <!DOCTYPE html>
-<html>
-<title>TechSearch & Associates</title>
+<html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — TechSearch &amp; Associates</title>
+  <meta name="description" content="Recruitment services for engineering and technical professionals across manufacturing, consulting engineering, government, and the private sector.">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-</style>
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="home.html" class="w3-bar-item w3-button"><img id="top-image" src="imgs/mini-logo.png" style="width: 50px;"></a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="services.html" class="w3-bar-item w3-button">Services</a>
-      <a href="industries.html" class="w3-bar-item w3-button">Industries</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-
 <body>
 
-
-  <div class="mobile-menu" style="display: none;">
-    <!-- Sidebar (hidden by default) -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-      <a href="javascript:void(0)" onclick="close_menu()" class="w3-bar-item w3-button" style="background: #ccc !important;">Close Menu</a>
-      <a href="services.html" onclick="close_menu()" class="w3-bar-item w3-button">Services</a>
-      <a href="industries.html" onclick="close_menu()" class="w3-bar-item w3-button">Industries</a>
-      <a href="contact.html" onclick="close_menu()" class="w3-bar-item w3-button">Contact</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="home.html" class="brand">
+        <img class="brand-mark" src="imgs/mini-logo.png" alt="" onerror="this.style.display='none'">
+        <span class="brand-word">TechSearch <em>&amp;</em> Associates</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html" aria-current="page"><span class="idx">01</span>Services</a>
+        <a href="industries.html"><span class="idx">02</span>Industries</a>
+        <a href="contact.html"><span class="idx">03</span>Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Top menu -->
-    <div class="w3-top">
-      <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-        <div class="w3-button" onclick="open_menu()">☰</div>
-        <a href="home.html" class="w3-bar-item w3-button w3-right"><img src="imgs/mini-logo.png" style="width: 50px;"></a>
+  <main>
+    <section class="page-hero services">
+      <div class="wrap">
+        <p class="eyebrow">Services</p>
+        <h1>Recruitment for engineering &amp; technical professionals.</h1>
       </div>
+    </section>
+
+    <section class="capability-section">
+      <div class="wrap">
+        <ol class="capability-index">
+          <li>
+            <span class="idx">01</span>
+            <span class="cap-name">Manufacturing</span>
+          </li>
+          <li>
+            <span class="idx">02</span>
+            <span class="cap-name">Consulting Engineering</span>
+          </li>
+          <li>
+            <span class="idx">03</span>
+            <span class="cap-name">Government</span>
+          </li>
+          <li>
+            <span class="idx">04</span>
+            <span class="cap-name">Private Sector</span>
+          </li>
+        </ol>
+        <p class="capability-note">Every placement is built not on a keyword match, but on a technical understanding of the role. See the sectors we work in on the <a href="industries.html" style="color:var(--blueprint); text-decoration:underline;">Industries</a> page, or <a href="contact.html" style="color:var(--blueprint); text-decoration:underline;">reach out</a> directly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> TechSearch &amp; Associates</span>
+      <span>Toronto, Canada</span>
     </div>
+  </footer>
 
-  </div>
-
-
-
-
-
-<div>
- 
-    
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    
-    <img class="middle-image" src="imgs/recruitment.jpg" alt="recruitment" style="display:block; margin:auto; margin-top: 6vh; width: 40vw;">
-
-    
-
-    <div style="text-align: center; margin: 0 auto;">
-
-      <br><br>
-
-      <div style="font-size: 24pt;">Providing Recruitment Services For Engineering And Technical Professionals To:</div>
-
-      <br><br>
-
-      <div class="services-list">
-          Manufacturing
-      </div>
-      <div class="services-list">
-          Consulting Engineering
-      </div>
-      <div class="services-list">
-          Government
-      </div>
-      <div class="services-list">
-          Private Sector
-      </div>
-
-    </div>
-
-
-  </div>
-
-  
-
-
-
-  <div class="w3-padding-large">
-    &copy; TechSearch & Associates
-  </div>
-</div>
-
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('mobileNav');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!open));
+          menu.classList.toggle('is-open', !open);
+        });
+        menu.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-open');
+          });
+        });
+      }
+      var yearEl = document.getElementById('year');
+      if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+    })();
+  </script>
 </body>
 </html>
-
-
-
-
-
-<script>
-  // Script to open and close sidebar
-  function open_menu() {
-    document.getElementById("mySidebar").style.animation = "animateleft 0.4s";
-    document.getElementById("mySidebar").style.display = "block";
-  }
-   
-  function close_menu() {
-    document.getElementById("mySidebar").style.animation = "animateright 0.4s";
-    setTimeout(function(){
-      document.getElementById("mySidebar").style.display = "none";
-    }, 380)
-  }
-  </script>
-
-
-
-
-
-
