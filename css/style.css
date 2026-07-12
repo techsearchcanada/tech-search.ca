@@ -308,7 +308,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(30px, 4.4vw, 46px);
   font-weight: 600;
   margin-top: 18px;
-  max-width: 40ch;
 }
 
 /* ----- Services / capability index ----- */
